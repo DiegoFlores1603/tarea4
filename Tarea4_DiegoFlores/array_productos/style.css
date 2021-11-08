@@ -1,0 +1,23 @@
+:root {
+  --celeste: #0b939c;
+}
+  h1{
+    color:var(--celeste);
+    font-size: 30px;
+  }
+  
+  * {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    transition: all 0.2s linear;
+    align-items: center;
+  }
+  body{
+    text-align: center;
+  }

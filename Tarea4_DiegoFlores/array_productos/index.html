@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>array de productos</title>
+  </head>
+  <body id="body">
+    <h1>Diego Flores Zambrano </h1>
+    <h1>Productos Alimenticios</h1><br>
+    <script>
+        function Producto_alimenticio(Codigo,Nombre,Precio){
+            this.Codigo=Codigo;
+            this.Nombre=Nombre;
+            this.Precio=Precio;
+        }
+        var producto1=new Producto_alimenticio(101,"Carnes","$ 1.30");
+        var producto2=new Producto_alimenticio(102,"Jamon","$ 1.75");
+        var producto3=new Producto_alimenticio(103,"Fideos","$ 0.50");
+        var array=[producto1,producto2,producto3];
+        for (i = 0; i < array.length; i++) {imprimeDatos(array[i])}
+        function imprimeDatos(array){
+            document.write("<strong> Código | </strong>"+array.Codigo+", ");
+            document.write("<strong> Nombre | </strong>"+array.Nombre+", ");
+            document.write("<strong> Precio | </strong>"+array.Precio+"<br>");
+        }
+    </script>
+  </body>
+</html>
